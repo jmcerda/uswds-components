@@ -1,0 +1,27 @@
+{% block paragraph %}
+  <div{{ attributes }}>
+    {%
+      set classes = [
+      'usa-graphic-list',
+      'usa-section',
+      paragraph.field_color_theme.value,
+      paragraph.field_background_color.value,
+      paragraph.field_edge_to_edge.value ? 'full-width-container'
+      ]
+    %}
+    {% block content %}
+      <section {{ attributes.addClass(classes) }}>
+        <div class="grid-container">
+          <h2>{{ content.field_title }}</h2>
+          {% for row in paragraph.field_media_blocks.value|batch(2) %}
+          <div class="usa-graphic-list__row grid-row grid-gap">
+            {% for key,value in row %}
+            {{ content.field_media_blocks[key] }}
+            {% endfor %}
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

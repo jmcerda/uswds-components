@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains uswds_components.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function uswds_components_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the uswds_components module.
+    case 'help.page.uswds_components':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('USWDS Paragraphs for IG Template.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function uswds_components_theme() {
+  return [
+    'uswds_components' => [
+      'render element' => 'children',
+    ],
+  ];
+}

@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.chart.field_chart_block
+    - paragraphs.paragraphs_type.chart
+  module:
+    - block_field
+id: paragraph.chart.default
+targetEntityType: paragraph
+bundle: chart
+mode: default
+content:
+  admin_title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_chart_block:
+    type: block_field_default
+    weight: -9
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

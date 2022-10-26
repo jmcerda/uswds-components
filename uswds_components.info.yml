@@ -1,0 +1,14 @@
+name: 'USWDS Paragraphs'
+type: module
+description: 'Paragraph types and configuration based on components/elements of USWDS (https://design.digital.gov).'
+core_version_requirement: ^8 || ^9
+package: USWDS
+
+dependencies:
+  - paragraphs:paragraphs
+  - drupal:paragraphs_ee
+  - drupal:paragraphs_features
+  - drupal:field_states_ui
+  - drupal:material_icons
+  - drupal:smart_trim  
+  - drupal:chosen

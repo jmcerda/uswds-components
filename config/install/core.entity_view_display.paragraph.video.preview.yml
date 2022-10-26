@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.video.field_video
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.video
+  module:
+    - media
+id: paragraph.video.preview
+targetEntityType: paragraph
+bundle: video
+mode: preview
+content:
+  field_video:
+    type: media_thumbnail
+    label: above
+    settings:
+      image_link: ''
+      image_style: thumbnail
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_chart_block
+    - paragraphs.paragraphs_type.chart
+  module:
+    - block_field
+    - epp
+third_party_settings:
+  epp:
+    value: ''
+    on_update: 0
+id: paragraph.chart.field_chart_block
+field_name: field_chart_block
+entity_type: paragraph
+bundle: chart
+label: 'Chart block'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    plugin_id: fusioncharts_block
+    settings: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      fusioncharts_block: fusioncharts_block
+field_type: block_field

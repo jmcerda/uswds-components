@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+    - type_style
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+  type_style:
+    color: '#000000'
+    icon: ''
+id: chart
+label: Chart
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

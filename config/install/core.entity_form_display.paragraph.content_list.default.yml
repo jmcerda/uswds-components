@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_list.field_column_layout
+    - field.field.paragraph.content_list.field_title
+    - field.field.paragraph.content_list.field_view
+    - paragraphs.paragraphs_type.content_list
+  module:
+    - chosen
+    - viewfield
+id: paragraph.content_list.default
+targetEntityType: paragraph
+bundle: content_list
+mode: default
+content:
+  field_column_layout:
+    type: chosen_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_view:
+    type: viewfield_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

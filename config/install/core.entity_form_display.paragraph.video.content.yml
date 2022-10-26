@@ -1,0 +1,32 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.video.field_video
+    - paragraphs.paragraphs_type.video
+  module:
+    - media_library
+id: paragraph.video.content
+targetEntityType: paragraph
+bundle: video
+mode: content
+content:
+  admin_title:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video:
+    type: media_library_widget
+    weight: -9
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_style
+    - paragraphs.paragraphs_type.card
+  module:
+    - options
+id: paragraph.card.field_button_style
+field_name: field_button_style
+entity_type: paragraph
+bundle: card
+label: 'Link/button style'
+description: "Select the button style of your URL.\r\n<em>See https://designsystem.digital.gov/components/button/ for details.</em>"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
