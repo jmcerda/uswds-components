@@ -1,11 +1,11 @@
 {
   "name": "jmcerda/uswds_components",
   "type": "drupal-module",
-  "description": "Paragraph types and configuration based on components/elements of USWDS (https://design.digital.gov).",
+  "description": "A Drupal dotGOV module providing a collection of paragraphs and configuration based on components/elements of USWDS. (https://design.digital.gov)",
   "keywords": [],
   "minimum-stability": "dev",
   "support": {
-    "issues": "https://github.com/jmcerda/uswds-paragraphs/issues",
-    "source": "https://github.com/jmcerda/uswds-paragraphs/"
+    "issues": "https://github.com/jmcerda/uswds-components/issues",
+    "source": "https://github.com/jmcerda/uswds-components/"
   }
 }

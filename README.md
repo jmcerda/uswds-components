@@ -1,10 +1,10 @@
 # README #
 
-A module providing a collection and configuration based on components/elements of USWDS (https://design.digital.gov).
+A Drupal dotGOV module providing a collection of paragraphs and configuration based on components/elements of USWDS. (https://design.digital.gov)
 
 ### What is this repository for? ###
 
-* GOV Template
+* DotGOV
 * v1.x-dev
 
 ### How do I get set up? ###
