@@ -2,7 +2,15 @@
   "name": "jmcerda/uswds_components",
   "type": "drupal-module",
   "description": "A Drupal dotGOV module providing a collection of paragraphs and configuration based on components/elements of USWDS. (https://design.digital.gov)",
-  "keywords": [],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jeremy Michael Cerda",
+      "role": "Developer",
+      "email": "jmcerda03@protonmail.ch"
+    }
+  ],
+  "keywords": ["Drupal", "USWDS"],
   "minimum-stability": "dev",
   "support": {
     "issues": "https://github.com/jmcerda/uswds-components/issues",
