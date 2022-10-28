@@ -1,4 +1,4 @@
-name: 'USWDS Paragraphs'
+name: 'USWDS Components'
 type: module
 description: 'Paragraph types and configuration based on components/elements of USWDS (https://design.digital.gov).'
 core_version_requirement: ^8 || ^9
